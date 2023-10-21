@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@200;400&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@200;400&display=swap");
 
 * {
   box-sizing: border-box;
@@ -7,10 +6,7 @@
   padding: 0;
 }
 
-
-
 body {
-
   font-family: "Poppins", sans-serif;
   height: 100vh;
 
@@ -37,6 +33,8 @@ body {
   background-color: rgba(0, 0, 0, 0.53);
   color: #fff;
   padding: 12px 2px;
+
+  margin: 16px;
   width: 110px;
   border-radius: 7px;
   border: none;
@@ -51,5 +49,16 @@ body {
 }
 
 .sound:active {
-  transform: scale(.97);
+  transform: scale(0.97);
+}
+
+@media (max-width: 52em) {
+  #container {
+    flex-direction: column;
+  }
+
+  .sound {
+    width: 210px;
+    margin: 12px;
+  }
 }
